@@ -1,0 +1,202 @@
+body, html{
+	margin: 0;
+	padding: 0;
+}
+
+
+#mainMenu {
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);	
+	justify-content: center;
+	align-items: center;
+}
+
+.left, .right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 100%;
+}
+
+#setData {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#setData form {
+	display: flex; 
+	flex-direction: column;
+}
+
+#setData form label {
+	margin-bottom: 1em;
+	display: flex;
+	flex-direction: column;
+}
+
+#setData form label input[type= text],
+#setData form label Select {
+	background-color: white;
+	padding: 0.5em;
+	border-radius: 5px;
+	border: none;
+	margin-top: 5px;
+}
+
+button {
+	background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+	border: none;
+	font-weight: bolder;
+	padding: 0.75em 1em;
+	border-radius: 5px;
+	font-size: 1em;
+	margin: 1em;
+	color: white;
+}
+
+#setData form label textarea {
+	background-color: white;
+	padding: 0.5em;
+	border-radius: 5px;
+	border: none;
+	margin-top: 5px;
+}
+
+#tag {
+	height: 12cm;
+	max-width: 9cm;
+	border: 1px dashed black;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+	border-radius: 0 0 0.5em 0.5em;
+}
+
+#backside, #info {
+	height: 50%;
+	width: 100%;
+}
+
+#backside {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+	align-items: center;
+	font-weight: bolder;
+	font-size: 2em;
+	color: #aaa;
+	background-color: white;
+}
+
+#barrio {
+	transform: rotateZ(180deg);
+}
+
+#info {
+	background-color: black;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#name {
+	font-size: 1.75em;
+	margin: 0 0 0.5em;
+	font-weight: bolder;
+}
+
+#the {
+	margin-bottom: 0;
+	font-size: 0.9em;
+}
+
+#church {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1.2em;
+}
+
+#of, #the2 {
+	margin: 0;
+	font-size: 0.7em;
+}
+
+#commitment {
+	max-width: 15cm;
+	height: auto;
+	color: black;
+	background-color: white;
+	border: 1px dashed black;
+	display: flex;
+	flex-direction: column;
+	padding: 2em;
+}
+
+#user {
+	display: flex;
+	flex-direction: column;
+}
+
+#user #userInfo {
+	display: flex;
+	flex-direction: column;
+}
+
+#user .imgContainer {
+	max-width: 5cm;
+	height: auto;
+	padding-right: 1em;
+}
+
+#user .imgContainer img {
+	width: 100%;
+	height: auto;
+	border: 1px solid black;
+}
+
+#user #userInfo span:nth-child(1) {
+	font-size: 3em;
+}
+
+#user #userInfo span:nth-child(2) {
+	font-size: 1.5em;
+	display: flex;
+	flex-direction: column;
+}
+
+#user #userInfo img {
+	height: auto;
+	width: 2cm;
+	border: 1px solid #aaa;
+}
+
+@media only screen and (min-width: 60em) {
+	#mainMenu {
+		display: flex;
+		flex-direction: row;
+		height: 100%;
+		justify-content: space-evenly;
+	}
+
+	#root {
+		height: 100vh;
+	}
+
+	#tag {
+		width: 9cm;
+	}
+
+	#user {
+		flex-direction: row;
+	}
+}
